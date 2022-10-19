@@ -1,4 +1,5 @@
 {
+  "comment":"manifest.jsonとは、アプリケーションの設定ファイルです。",
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [

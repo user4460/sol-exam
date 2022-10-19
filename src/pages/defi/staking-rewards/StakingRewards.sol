@@ -8,6 +8,7 @@ contract StakingRewards {
     address public owner;
 
     // Duration of rewards to be paid out (in seconds)
+    // durationとは、報酬を支払う期間のこと。
     uint public duration;
     // Timestamp of when the rewards finish
     uint public finishAt;

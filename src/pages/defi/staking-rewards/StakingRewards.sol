@@ -2,7 +2,9 @@
 pragma solidity ^0.8;
 
 contract StakingRewards {
+    //statingtokenとは、ユーザーがステーキングするトークンのこと
     IERC20 public immutable stakingToken;
+    //rewardsTokenとは、ステーキングしたトークンに対して配布されるトークンのこと
     IERC20 public immutable rewardsToken;
 
     address public owner;

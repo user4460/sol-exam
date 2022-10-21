@@ -2,6 +2,7 @@
 pragma solidity ^0.8.13;
 
 contract Enum {
+    //enumとは、列挙型のこと
     // Enum representing shipping status
     enum Status {
         Pending,

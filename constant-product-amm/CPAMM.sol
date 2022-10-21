@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//cpammとは、Constant Product AMMと呼ばれる、一般的なAMMの実装である。
 contract CPAMM {
     IERC20 public immutable token0;
     IERC20 public immutable token1;

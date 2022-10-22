@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.6;
 
+//overflowとは、変数の上限を超えて値を代入しようとした場合に発生するエラー
+
 // This contract is designed to act as a time vault.
 // User can deposit into this contract but cannot withdraw for atleast a week.
 // User can also extend the wait time beyond the 1 week waiting period.

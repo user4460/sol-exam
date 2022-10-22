@@ -3,6 +3,7 @@ pragma solidity ^0.8.13;
 
 // original code
 // https://github.com/optionality/clone-factory/blob/master/contracts/CloneFactory.sol
+//MinimalProxyとは、コントラクトのコピーを作成するためのコントラクト
 
 contract MinimalProxy {
     function clone(address target) external returns (address result) {

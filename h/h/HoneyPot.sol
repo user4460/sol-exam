@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
+//honeypotとは、
+//攻撃者がコントラクトに送金することで、攻撃者のアドレスにEtherが送金されるように設計されたコントラクト
 
 /*
 Bank is a contract that calls Logger to log events.

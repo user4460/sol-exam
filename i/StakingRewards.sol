@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8;
 
+//stakingrewardsとは、ステーキング報酬を支払う機能
 contract StakingRewards {
     //statingtokenとは、ユーザーがステーキングするトークンのこと
     IERC20 public immutable stakingToken;

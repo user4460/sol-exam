@@ -28,6 +28,7 @@ library Math {
     }
 }
 
+//StableSwapとは、
 contract StableSwap {
     // Number of tokens
     uint private constant N = 3;

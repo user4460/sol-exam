@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//loopとは、繰り返し処理を行う機能
 contract Loop {
     function loop() public {
         // for loop

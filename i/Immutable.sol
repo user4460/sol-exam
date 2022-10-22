@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//immutableとは、コントラクトの初期化時に設定される変数
 contract Immutable {
     // coding convention to uppercase constant variables
     address public immutable MY_ADDRESS;

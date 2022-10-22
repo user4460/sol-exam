@@ -16,6 +16,8 @@ A player needs to send 10 Ether and wins if the block.timestamp % 15 == 0.
    Roulette game.
 */
 
+
+//rouletteとは、ブロックタイムスタンプを操作することで、コントラクト内のEtherを全て獲得できるゲーム
 contract Roulette {
     uint public pastBlockTime;
 

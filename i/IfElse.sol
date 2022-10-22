@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//ifelseとは、条件分岐を行う機能
 contract IfElse {
     function foo(uint x) public pure returns (uint) {
         if (x < 10) {

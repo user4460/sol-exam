@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//vaultとは、
 contract Vault {
     IERC20 public immutable token;
 
@@ -11,6 +12,7 @@ contract Vault {
         token = IERC20(_token);
     }
 
+    //mintとは、
     function _mint(address _to, uint _shares) private {
         totalSupply += _shares;
         balanceOf[_to] += _shares;

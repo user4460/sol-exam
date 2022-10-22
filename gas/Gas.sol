@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//gasとは、Ethereumのトランザクションを実行するために必要な手数料のことです。
 contract Gas {
     uint public i = 0;
 

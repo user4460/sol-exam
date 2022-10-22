@@ -15,6 +15,7 @@ How to Sign and Verify
 3. Compare recovered signer to claimed signer
 */
 
+//verifySignatureとは、署名を検証する関数
 contract VerifySignature {
     /* 1. Unlock MetaMask account
     ethereum.enable()

@@ -1,13 +1,16 @@
 {
   "name": "hardhat-project",
-  "script":{
-    "help":"npx hardhat help",
+  "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
     "console": "hardhat console",
-    "deploy": "hardhat run scripts/deploy.js --network localhost",
-    "node":"npx hardhat node",
-    "report":"REPORT_GAS=true npx hardhat test"
+    "run": "hardhat run scripts/deploy.js",
+    "node": "npx hardhat node",
+    "report": "REPORT_GAS=true npx hardhat test",
+    "help": "npx hardhat help",
+    "check": "npx hardhat check",
+    "clean": "npx hardhat clean",
+    "flatten": "npx hardhat flatten"
   },
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",

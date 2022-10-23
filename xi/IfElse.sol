@@ -13,6 +13,7 @@ contract IfElse {
         }
     }
 
+    //ternaryとは、三項演算子のこと
     function ternary(uint _x) public pure returns (uint) {
         // if (_x < 10) {
         //     return 1;

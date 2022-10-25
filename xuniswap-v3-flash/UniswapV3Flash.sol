@@ -66,7 +66,9 @@ contract UniswapV3Flash {
     }
 }
 
+//libraryとは、複数の関数をまとめておくことができる。
 library PoolAddress {
+    //bytes32とは、256ビットのデータを格納するためのデータ型
     bytes32 internal constant POOL_INIT_CODE_HASH =
         0xe34f199b19b2b4f47f68442619d555527d244f78a3297ea89325f843f87b8b54;
 
@@ -95,6 +97,7 @@ library PoolAddress {
             uint160(
                 uint(
                     keccak256(
+                        //abi.encodePackedとは、複数の変数を1つのバイト列にまとめる関数
                         abi.encodePacked(
                             hex"ff",
                             factory,
@@ -118,12 +121,15 @@ interface IUniswapV3Pool {
 }
 
 interface IERC20 {
+    //totalSupply関数とは、トークンの総発行量を返す関数
     function totalSupply() external view returns (uint);
 
+    //balanceOf関数とは、指定したアドレスの残高を返す関数
     function balanceOf(address account) external view returns (uint);
 
     function transfer(address recipient, uint amount) external returns (bool);
 
+    //allowance関数とは、あるアドレスが別のアドレスに送ることができるトークンの量を返す関数です。
     function allowance(address owner, address spender) external view returns (uint);
 
     function approve(address spender, uint amount) external returns (bool);
@@ -134,6 +140,8 @@ interface IERC20 {
         uint amount
     ) external returns (bool);
 
+    //indexedとは、イベントの引数をトピックとして記録するかどうかを指定するものです。
+    //トピックとは、イベントの引数をハッシュ化したもので、イベントの検索に使用されます。
     event Transfer(address indexed from, address indexed to, uint value);
     event Approval(address indexed owner, address indexed spender, uint value);
 }

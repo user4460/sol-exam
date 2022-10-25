@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+//mappingとは、キーと値のペアを保存するためのデータ構造です。
 contract Mapping {
     // Mapping from address to uint
     mapping(address => uint) public myMap;

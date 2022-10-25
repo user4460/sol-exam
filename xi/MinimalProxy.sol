@@ -4,8 +4,9 @@ pragma solidity ^0.8.13;
 // original code
 // https://github.com/optionality/clone-factory/blob/master/contracts/CloneFactory.sol
 //MinimalProxyとは、コントラクトのコピーを作成するためのコントラクト
-
 contract MinimalProxy {
+
+  //cloneとは、コントラクトのコピーを作成すること
     function clone(address target) external returns (address result) {
         // convert address to 20 bytes
         bytes20 targetBytes = bytes20(target);
@@ -21,6 +22,7 @@ contract MinimalProxy {
         // code to delegatecall to address
         // 363d3d373d3d3d363d73 address 5af43d82803e903d91602b57fd5bf3
 
+        //assemblyとは、EVMの命令を直接書くことができる
         assembly {
             /*
             reads the 32 bytes of memory starting at pointer stored in 0x40
